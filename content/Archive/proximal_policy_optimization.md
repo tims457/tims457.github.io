@@ -136,8 +136,6 @@ Despite being simpler than TRPO to implement, PPO still requires some tuning of 
 ## Next steps
 Now that this discrete version of PPO is working, I want to work on adapting the algorithm for continuous control (testing it on the continuous version of lunar lander) as well as using it on custom environments rather than just the OpenAI gym.
 
-See something wrong or have a question? [Contact me](https://forms.gle/DpsktUpr9tLkbApS6) or message me on [Twitter](https://twitter.com/tims457).
-
 ## References
 - [PPO](http://arxiv.org/abs/1707.06347)
 - [TRPO](https://arxiv.org/abs/1502.05477)
