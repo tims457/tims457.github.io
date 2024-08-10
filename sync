@@ -1,1 +1,11 @@
-npx quartz sync
+#!/bin/bash
+
+message=${1:-""}
+
+if [ -z "$message" ]; then
+  echo "default sync"
+  npx quartz sync
+else
+    echo "custom commit message:" $message
+    npx quartz sync -m "$message"
+fi
