@@ -1,10 +1,12 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
+import { hide } from "yargs"
 
 const ArticleTitle: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
   const title = fileData.frontmatter?.title
+  const hideTitle = fileData.frontmatter?.hideTitle
   console.log("ArticleTitle.tsx: title", title)
-  if (title !== "None") {
+  if (hideTitle !== true) {
     return <h1 class={classNames(displayClass, "article-title")}>{title}</h1>
   } else {
     return <h1 class={classNames(displayClass, "article-title")}></h1>

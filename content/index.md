@@ -1,5 +1,6 @@
 ---
-title: None
+title: Tim
+hideTitle: true
 enableToc: false
 enableMeta: false
 ---
