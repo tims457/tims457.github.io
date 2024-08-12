@@ -43,15 +43,15 @@ export const defaultContentPageLayout: PageLayout = {
     // Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
-    // Component.MobileOnly(
-    //   Component.RecentNotes(
-    //     { 
-    //     title: "Recent Posts",
-    //     showTags: false,
-    //     filter: (f) => f.frontmatter?.date !== undefined,
-    //   }
-    //   )
-    // ),
+    Component.MobileOnly(
+      Component.RecentNotes(
+        { 
+        title: "Recent Posts",
+        showTags: false,
+        filter: (f) => f.frontmatter?.date !== undefined,
+      }
+      )
+    ),
     Component.MobileOnly(Component.Explorer()),
   ],
 }
