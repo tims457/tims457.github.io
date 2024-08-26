@@ -18,6 +18,7 @@ comments: false
 - Complexity a Guided Tour
 - Exhalation
 - Finite and Infinite Games
+- Gödel Escher Bach
 - Lessons of History
     > Nature smiles at the union of freedom and equality in our utopias. For freedom and equality are sworn and everlasting enemies, and when one prevails the other dies.
 - A Man for all Markets
@@ -40,6 +41,8 @@ comments: false
 - Zero to One
 
 ## Somewhat chronologically
+- Gödel Escher Bach
+- On the Edge
 - Dune
     > Deep in the human unconscious is a pervasive need for a logical universe that makes sense. But the real universe is always one step beyond logic.
 
