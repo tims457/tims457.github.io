@@ -6,7 +6,7 @@ enableMeta: false
 ---
 
 
-Hi, I'm Tim. This is my website for posting notes and occasional projects.  Among other things, I'm interested in aerospace engineering, physics, machine learning / artificial intelligence, and complex systems. I live in Colorado and enjoy hiking, trail running (including the occasional ultramarathon), biking, and climbing.
+Hi, I'm Tim. This is my website for posting notes and occasional projects.  Among other things I'm interested in aerospace engineering, physics, machine learning / artificial intelligence, complex systems, and active inference. I live in Colorado and enjoy hiking, trail running (including the occasional ultramarathon), biking, and climbing.
 
 You can find me on [Twitter/X](https://x.com/tims457)
 

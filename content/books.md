@@ -10,15 +10,10 @@ comments: false
 ## Some favorites
 - Antifragile
 - Boyd
-    > One of the most valuable aspects of “Patterns of Conflict” was that it laid out a framework for assessing different technological approaches. It promoted the application of scientific and engineering knowledge to human needs. “Patterns” is about the mental and moral aspects of human behavior in war. That technology should reinforce that behavior, not drive it, was the argument of the Reformers. Boyd’s mantra was “Machines don’t fight wars, people do, and they use their minds.” He also preached, “People, ideas, hardware—in that order.” Thus, machines and technology must serve the larger purpose.
-
-    > Boyd, borrowing from Sun Tzu, said the best commander is the one who wins while avoiding battle. The intent is to shatter cohesion, produce paralysis, and bring about collapse of the adversary by generating confusion, disorder, panic, and chaos. Boyd said war is organic and compared his technique to clipping the nerves, muscles, and tendons of an enemy, thus reducing him to jelly.
 - Blindsight
-    > Wegner thought it was an executive summary. Penrose heard it in the singing of caged electrons. Norretranders said it was a fraud; Kazim called it leakage from a parallel universe. Metzinger wouldn’t even admit it existed. The AIs claimed to have worked it out, then announced they couldn’t explain it to us. Gödel was right after all: No system can fully understand itself.
 - Complexity a Guided Tour
 - Exhalation
 - Finite and Infinite Games
-- Gödel Escher Bach
 - Lessons of History
     > Nature smiles at the union of freedom and equality in our utopias. For freedom and equality are sworn and everlasting enemies, and when one prevails the other dies.
 - A Man for all Markets
@@ -41,14 +36,7 @@ comments: false
 - Zero to One
 
 ## Somewhat chronologically
-- Gödel Escher Bach
-- On the Edge
 - Dune
-    > Deep in the human unconscious is a pervasive need for a logical universe that makes sense. But the real universe is always one step beyond logic.
-
-    > A process cannot be understood by stopping it. Understanding must move with the flow of the process, must join it and flow with it.
-
-    > For the others, we can say that Muad’Dib learned rapidly because his first training was in how to learn. And the first lesson of all was the basic trust that he could learn. It is shocking to find how many people do not believe they can learn, and how many more believe learning to be difficult.
 - Poor Charlie's Almanack
     > Change – Live with change and accept unremovable complexity  Recognize and adapt to the true nature of the world around you; don’t expect it to adapt to you  Continually challenge and willingly amend your “best-loved ideas” Recognize reality even when you don’t like it – especially when you don’t like it.
 - The Wandering Earth
@@ -75,7 +63,6 @@ comments: false
     > It appears that once a society develops beyond a certain level of complexity it becomes increasingly fragile. Eventually, it reaches a point at which even a relatively minor disturbance can bring everything crashing down.”
 - The Art of Learning
 - Blindsight
-    > Wegner thought it was an executive summary. Penrose heard it in the singing of caged electrons. Norretranders said it was a fraud; Kazim called it leakage from a parallel universe. Metzinger wouldn’t even admit it existed. The AIs claimed to have worked it out, then announced they couldn’t explain it to us. Gödel was right after all: No system can fully understand itself.
 - The Theoretical Minimum: Classical Mechanics
 - The Player of Games
 - The Last Warrior: Andrew Marshall and the Shaping of Modern American Defense Strategy
