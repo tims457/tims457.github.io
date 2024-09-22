@@ -18,3 +18,4 @@ A collection of recomended reading lists and resources for finding good books.
 - Tanner Greer asked about a "Tech Canon." Here's Patrick Collison's [version](https://x.com/patrickc/status/1825618450837885036), and [Tanner's follow-up list](https://scholars-stage.org/the-silicon-valley-canon-on-the-paideia-of-the-american-tech-elite/)
 - [Essays to Read](https://www.notion.so/b64d5144c7cc4c7a991119eff4588428?v=4c2dba4120a644768db4a0d42839f491) from the responses to Patrick O'Shaughnessy's [tweet](https://x.com/patrick_oshag/status/1278307221944840193).
 - [The Good Books](https://infoproc.blogspot.com/2013/01/the-good-books.html) physics and non-technical bookshelves from Steve Hsu.
+- Trenton Bricken's [bookshelf](https://www.trentonbricken.com/bookshelf/)
