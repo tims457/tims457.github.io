@@ -41,4 +41,3 @@ showTableOfContents = false
 - ## References
 	- [1] England, Jeremy. *Every Life Is on Fire: How Thermodynamics Explains the Origins of Living Things*. 2020.
 	- [2] England, Jeremy L. “Dissipative Adaptation in Driven Self-Assembly.” *Nature Nanotechnology*, November 1, 2015. [https://doi.org/10.1038/nnano.2015.250](https://doi.org/10.1038/nnano.2015.250).
-	-
