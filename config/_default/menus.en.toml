@@ -13,7 +13,7 @@
 [[main]]
  name = "Archive"
  pageRef = "archive"
- weight = 20
+ weight = 10
 
 [[main]]
  name = "Books"
@@ -23,7 +23,13 @@
 [[main]]
  name = "Research"
  pageRef = "research"
- weight = 20
+ weight = 30
+
+[[main]]
+ name = ""
+ pre = "x-twitter"
+ url = "https://x.com/tims457"
+ weight = 40
 
 #[[main]]
 #  name = "example sub-menu 2"
@@ -36,11 +42,7 @@
 #  pageRef = "tags/interesting-topic"
 #  weight = 10
 
-#[[subnavigation]]
-#  name = "My Awesome Category"
-#  pre = "github"
-#  pageRef = "categories/awesome"
-#  weight = 20
+
 
 #[[main]]
 #  name = "Categories"
