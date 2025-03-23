@@ -6,10 +6,10 @@ layout = "post"
 tags = ["machine learning", "reinforcement learning", "tensorflow", "proximal policy optimization (PPO)"]
 description = "My notes from learning to implement PPO including trust regions, importance sampling, and other topics."
 katex = true
-showTableOfContents = false
+showTableOfContents = true
 +++
 
-# Proximal policy optimization
+## Proximal policy optimization
 
 Proximal policy optimization (PPO) is often described in relation to trust region policy optimization (TRPO). It's TRPO but better. PPO is an algorithm to deal with common problems in reinforcement learning such as policy instability and large sample sizes.
 
@@ -22,8 +22,9 @@ The trust region is an area around the current objective where an approximation 
 PPO clips the objective function which limits the movement of the parameters, $\theta$, so the difference between the new and old policies remains small. In TRPO, this is implemented using the Kullback-Leibler divergence (KL divergence) as a penalty rather than clipping the importance sampling. Small policy updates within the trust region keep the policy stable during training.
 
 $$
-L^{C L I P}(\theta)=\hat{\mathbb{E}}_{t}\left[\min \left(r_{t}(\theta) \hat{A}_{t}, \operatorname{clip}\left(r_{t}(\theta), 1-\epsilon, 1+\epsilon\right) \hat{A}_{t}\right)\right]
+L^{CLIP}(\theta) = \hat{\mathbb{E}}_t\left[\min\left(r_t(\theta)\hat{A}_t, \mathrm{clip}\left(r_t(\theta), 1-\epsilon, 1+\epsilon\right)\hat{A}_t\right)\right]
 $$
+
 
 where $r_{t}(\theta)=\frac{\pi_{\theta}\left(a_{t} \mid s_{t}\right)}{\pi_{\theta_{\text {old }}}\left(a_{t} \mid s_{t}\right)}$ and $\epsilon$ is a hyperparameter, usually around 0.1 or 0.2
 

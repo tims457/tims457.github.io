@@ -9,7 +9,7 @@ katex = true
 showTableOfContents = false
 +++
 
-# Concepts
+## Concepts
 - **Macroscopic coarse-graining** - many microscopic ways of arranging matter that have the same macroscopic (coarse) features, indistinguishable when considering the whole
 - **Entropy**- $S$, number of microscopic ways a given coarse grained outcome can be achieved.
 - **Boltzmann Distribution** - The probability that a system is in a given microstate $p_i$ is proportional to its temperature $T$ and energy $E$.
@@ -38,6 +38,6 @@ showTableOfContents = false
 
     - Given an external drive, certain configurations of the system may be better than others at absorbing work. If the system is configured in such a way that the energy from the external drive enables the transition of energy barriers followed by the dissipation of energy, then the system will not be able to transition back. Over time the system will adopt states that allowed this process to occur appearing to have self-organized based on its environment. If the environment changes, the system can reconfigure yet again.
 	-
-- ## References
-	- [1] England, Jeremy. *Every Life Is on Fire: How Thermodynamics Explains the Origins of Living Things*. 2020.
-	- [2] England, Jeremy L. “Dissipative Adaptation in Driven Self-Assembly.” *Nature Nanotechnology*, November 1, 2015. [https://doi.org/10.1038/nnano.2015.250](https://doi.org/10.1038/nnano.2015.250).
+## References
+- [1] England, Jeremy. *Every Life Is on Fire: How Thermodynamics Explains the Origins of Living Things*. 2020.
+- [2] England, Jeremy L. “Dissipative Adaptation in Driven Self-Assembly.” *Nature Nanotechnology*, November 1, 2015. [https://doi.org/10.1038/nnano.2015.250](https://doi.org/10.1038/nnano.2015.250).

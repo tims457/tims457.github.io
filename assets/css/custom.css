@@ -1,2 +1,6 @@
 /* Generated using: hugo gen chromastyles --style=github-dark */
 
+.dark\:bg-neutral-800:is(.dark *) {
+    --tw-bg-opacity:1;
+    background-color:#25282e;
+  }

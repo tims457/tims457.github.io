@@ -7,14 +7,13 @@ tags = ["decision making", "Julia", "uncertainty", "monte carlo tree search"]
 description = "Explanation of Monte Carlo Tree Search Algorithm for solving POMDPs"
 katex = true
 +++
+
 ![](dr_strange_futures.png)
 
 Monte Carlo Tree Search (MCTS) is an algorithm used in decision-making and search problems. The algorithm builds a search tree of possible moves and outcomes, exploring the tree by simulating a number of games to determine the best moves. MCTS balances exploration of unexplored nodes and exploitation of nodes that have shown promise in the past. The algorithm selects the best move to make from the current game state based on the statistics collected during the simulation phase.
 
 
-
-# Algorithm
-
+## Algorithm
 
 ![Monte Carlo Tree Search](mcts.png)
 
@@ -49,7 +48,7 @@ Monte Carlo Tree Search (MCTS) is an algorithm used in decision-making and searc
 4. **Backprop**:
 	- Recursively propagate value estimate at leaf node backwards through tree, updating value estimate $Q$ at each parent using current reward + discounted future reward.
 
-# Code
+## Code
 Based on [1] with additional explanation.
 ```julia
 mutable struct  MCTS
@@ -126,7 +125,7 @@ function U(P, policy, s)
 end
 ```
 
-# Modifications
+## Modifications
 - (Double) Progressive Widening
 	- Limit the number of actions considered from state $s$
 	- Limit the number of states resulting from action $a$
