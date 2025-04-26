@@ -18,3 +18,4 @@ A collection of recomended reading lists and resources for finding good books.
 - [Essays to Read](https://www.notion.so/b64d5144c7cc4c7a991119eff4588428?v=4c2dba4120a644768db4a0d42839f491) from the responses to Patrick O'Shaughnessy's [tweet](https://x.com/patrick_oshag/status/1278307221944840193).
 - [The Good Books](https://infoproc.blogspot.com/2013/01/the-good-books.html) physics and non-technical bookshelves from Steve Hsu.
 - Trenton Bricken's [bookshelf](https://www.trentonbricken.com/bookshelf/)
+- Michael Nielsen [suggestions for the Astera Institute library](https://x.com/michael_nielsen/status/1916255568337244194).
