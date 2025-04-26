@@ -7,7 +7,7 @@ showReadingTime = false
 
 *I love to read, and try to get through a couple dozen books a year. I didn't always keep a list so there are plenty missing. I've also been going back and adding a meaningful quote or two.*
 
-I also collect people's [[Notes/book_lists| recommended reading lists]]
+I also collect people's [book lists](/archive/book_lists).
 
 ## Some favorites
 - Antifragile
