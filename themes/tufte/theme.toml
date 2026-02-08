@@ -1,0 +1,9 @@
+name = "Tufte"
+license = "MIT"
+licenselink = "https://github.com/edwardtufte/tufte-css/blob/gh-pages/LICENSE"
+description = "A Hugo theme inspired by Edward Tufte's handout style"
+tags = ["tufte", "minimal", "typography", "sidenotes"]
+min_version = "0.87.0"
+
+[author]
+  name = ""

@@ -1,0 +1,21 @@
+{{ define "main" }}
+<h1>{{ .Title | default (.Section | humanize | title) }}</h1>
+<section>
+  {{ .Content }}
+  {{ $pages := .Pages }}
+  {{ if $pages }}
+  <ul class="post-list">
+    {{ $byYear := $pages.GroupByDate "2006" }}
+    {{ range $byYear }}
+    <li class="year-heading">{{ .Key }}</li>
+    {{ range .Pages }}
+    <li>
+      <span class="post-date">{{ .Date.Format "Jan 2" }}</span>
+      <a class="post-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+    {{ end }}
+  </ul>
+  {{ end }}
+</section>
+{{ end }}

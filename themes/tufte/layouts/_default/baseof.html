@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}" data-theme="light">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+    {{ partial "header.html" . }}
+    <article>
+      {{ block "main" . }}{{ end }}
+    </article>
+    {{ partial "footer.html" . }}
+    {{ if .Site.Params.enableSearch }}{{ partial "search.html" . }}{{ end }}
+  </body>
+</html>

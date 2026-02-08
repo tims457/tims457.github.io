@@ -1,0 +1,11 @@
+<footer class="site-footer">
+  <hr>
+  {{ if .Site.Menus.footer }}
+  <nav class="footer-nav">
+    {{ range .Site.Menus.footer }}
+      <a href="{{ .Page.RelPermalink }}">{{ .Name }}</a>
+    {{ end }}
+  </nav>
+  {{ end }}
+  <p class="copyright">&copy; {{ now.Year }} {{ .Site.Title }}</p>
+</footer>

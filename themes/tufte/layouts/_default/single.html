@@ -1,0 +1,17 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ if .Date }}
+<p class="subtitle">{{ .Date.Format "2 January 2006" }}</p>
+{{ end }}
+<section>
+  {{ if .Params.showTableOfContents | default .Site.Params.article.showTableOfContents }}
+    {{ if .TableOfContents }}
+    <nav class="toc" aria-label="Table of Contents">
+      <p class="toc-label">Contents</p>
+      {{ .TableOfContents }}
+    </nav>
+    {{ end }}
+  {{ end }}
+  {{ .Content }}
+</section>
+{{ end }}

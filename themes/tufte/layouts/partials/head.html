@@ -1,0 +1,45 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}</title>
+
+{{- $description := .Description | default .Site.Params.description | default "" }}
+{{- if $description }}
+<meta name="description" content="{{ $description }}">
+{{- end }}
+
+{{ $css := resources.Get "css/tufte.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+{{/* Favicons */}}
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.ico">
+
+{{/* KaTeX - conditional on page front matter */}}
+{{ if .Params.katex }}
+{{ partial "katex.html" . }}
+{{ end }}
+
+{{/* Dark mode script - runs early to prevent flash */}}
+{{ $darkmode := resources.Get "js/darkmode.js" | minify | fingerprint }}
+<script src="{{ $darkmode.RelPermalink }}" integrity="{{ $darkmode.Data.Integrity }}"></script>
+
+{{/* Search */}}
+{{ if .Site.Params.enableSearch }}
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" defer></script>
+{{ $search := resources.Get "js/search.js" | minify | fingerprint }}
+<script src="{{ $search.RelPermalink }}" integrity="{{ $search.Data.Integrity }}" defer></script>
+{{ end }}
+
+{{/* OpenGraph & Twitter Cards */}}
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+
+{{/* Canonical URL */}}
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{/* RSS */}}
+{{ with .OutputFormats.Get "rss" -}}
+  {{ printf `<link rel="alternate" type=%q href=%q title=%q>` .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{- end }}

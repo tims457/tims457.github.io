@@ -1,0 +1,1 @@
+{{ $quote := .Get 0 }}{{ $author := .Get 1 }}{{ $source := .Get 2 }}<div class="epigraph"><blockquote><p>{{ $quote }}</p><footer>{{ $author }}{{ if $source }}, <cite>{{ $source }}</cite>{{ end }}</footer></blockquote></div>

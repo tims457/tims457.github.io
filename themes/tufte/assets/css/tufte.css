@@ -1,0 +1,1043 @@
+/* ET Book font-face declarations */
+@font-face {
+  font-family: "et-book";
+  src: url("/fonts/et-book/et-book-roman-line-figures.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "et-book";
+  src: url("/fonts/et-book/et-book-display-italic-old-style-figures.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "et-book";
+  src: url("/fonts/et-book/et-book-bold-line-figures.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "et-book-roman-old-style";
+  src: url("/fonts/et-book/et-book-roman-old-style-figures.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "serif4";
+  src: url("/fonts/serif4/SourceSerif4-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "serif4";
+  src: url("/fonts/serif4/SourceSerif4-Italic.ttf") format("ttf");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "serif4";
+  src: url("/fonts/serif4/SourceSerif4-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* === Base === */
+html {
+  font-size: 15px;
+}
+
+body {
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12.5%;
+  font-family: "serif4", Palatino, "Palatino Linotype", "Palatino LT STD",
+    "Book Antiqua", Georgia, serif;
+  background-color: #fffff8;
+  color: #111;
+  max-width: 1400px;
+  counter-reset: sidenote-counter;
+}
+
+/* === Typography === */
+h1 {
+  font-weight: 400;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+h2 {
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 2.1rem;
+  margin-bottom: 1.4rem;
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+h3 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  margin-bottom: 1.4rem;
+  line-height: 1;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  width: 55%;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+p.subtitle {
+  font-style: italic;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  display: block;
+  line-height: 1;
+}
+
+.numeral {
+  font-family: "serif4";
+}
+
+.danger {
+  color: red;
+}
+
+article {
+  padding: 5rem 0;
+}
+
+section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+p,
+dl,
+ol,
+ul {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+p {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  padding-right: 0;
+  vertical-align: baseline;
+}
+
+blockquote {
+  font-size: 1.4rem;
+}
+
+blockquote p {
+  width: 85%;
+  margin-right: 40px;
+}
+
+blockquote footer {
+  width: 55%;
+  font-size: 1.1rem;
+  text-align: right;
+}
+
+section > p,
+section > footer,
+section > table {
+  width: 55%;
+}
+
+section > dl,
+section > ol,
+section > ul {
+  width: 50%;
+  -webkit-padding-start: 5%;
+  padding-inline-start: 5%;
+}
+
+dt:not(:first-child),
+li:not(:first-child) {
+  margin-top: 0.25rem;
+}
+
+figure {
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  max-width: 55%;
+  -webkit-margin-start: 0;
+  margin-inline-start: 0;
+  -webkit-margin-end: 0;
+  margin-inline-end: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+figcaption {
+  float: right;
+  clear: right;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  vertical-align: baseline;
+  position: relative;
+  max-width: 40%;
+}
+
+figure.fullwidth figcaption {
+  margin-right: 24%;
+}
+
+/* === Links === */
+a:link {
+  text-decoration: none;
+  background: linear-gradient(#fffff8, #fffff8),
+    linear-gradient(#fffff8, #fffff8),
+    linear-gradient(currentColor, currentColor);
+  background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: 0% 93%, 100% 93%, 0% 93%;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+}
+
+a:link::selection,
+a:link::-moz-selection {
+  text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe,
+    0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe,
+    0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe,
+    -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
+}
+
+/* === Sidenotes & Marginnotes === */
+.sidenote,
+.marginnote {
+  float: right;
+  clear: right;
+  margin-right: -60%;
+  width: 50%;
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  vertical-align: baseline;
+  position: relative;
+}
+
+.sidenote-number {
+  counter-increment: sidenote-counter;
+}
+
+.sidenote-number::after,
+.sidenote::before {
+  font-family: "serif4";
+  position: relative;
+  vertical-align: baseline;
+}
+
+.sidenote-number::after {
+  content: counter(sidenote-counter);
+  font-size: 1rem;
+  top: -0.5rem;
+  left: 0.1rem;
+}
+
+.sidenote::before {
+  content: counter(sidenote-counter) " ";
+  font-size: 1rem;
+  top: -0.5rem;
+}
+
+blockquote .sidenote,
+blockquote .marginnote {
+  margin-right: -82%;
+  min-width: 59%;
+  text-align: left;
+}
+
+input.margin-toggle {
+  display: none;
+}
+
+label.sidenote-number {
+  display: inline-block;
+  max-height: 2rem;
+}
+
+label.margin-toggle:not(.sidenote-number) {
+  display: none;
+}
+
+/* === Images === */
+img {
+  max-width: 100%;
+}
+
+.fullwidth {
+  max-width: 90%;
+  clear: both;
+}
+
+span.marginnote img,
+span.sidenote img {
+  max-width: 100%;
+}
+
+/* === Tables (Booktabs style) === */
+table {
+  width: 55%;
+  border-collapse: collapse;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+thead th {
+  border-bottom: 2px solid #111;
+  padding: 0.4em 0.8em;
+  font-weight: 400;
+}
+
+tbody td {
+  border-bottom: 1px solid #ccc;
+  padding: 0.4em 0.8em;
+}
+
+/* Add top rule */
+table {
+  border-top: 2px solid #111;
+}
+
+/* === Newthought === */
+.newthought {
+  font-variant: small-caps;
+  font-size: 1.2em;
+}
+
+/* === Epigraph === */
+div.epigraph {
+  margin: 5em 0;
+}
+
+div.epigraph > blockquote {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+div.epigraph > blockquote,
+div.epigraph > blockquote > p {
+  font-style: italic;
+}
+
+div.epigraph > blockquote > footer {
+  font-style: normal;
+}
+
+div.epigraph > blockquote > footer > cite {
+  font-style: italic;
+}
+
+/* === Code === */
+code,
+pre > code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 1rem;
+  line-height: 1.42;
+  -webkit-text-size-adjust: 100%;
+}
+
+.sans > code {
+  font-size: 1.2rem;
+}
+
+h1 > code,
+h2 > code,
+h3 > code {
+  font-size: 0.8em;
+}
+
+.fullwidth code,
+.marginnote code,
+.sidenote code {
+  font-size: 1rem;
+}
+
+pre > code {
+  font-size: 0.9rem;
+  width: 52.5%;
+  margin-left: 2.5%;
+  overflow-x: auto;
+  display: block;
+}
+
+pre.fullwidth > code {
+  width: 90%;
+}
+
+.fullwidth {
+  max-width: 90%;
+  clear: both;
+}
+
+/* Hugo Chroma code blocks */
+.highlight {
+  width: 55%;
+  overflow: visible;
+}
+
+.highlight pre {
+  margin: 0;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.highlight code {
+  width: 100%;
+  margin-left: 0;
+}
+
+/* === Table of Contents === */
+.toc {
+  border-left: 3px solid #ccc;
+  padding-left: 1.4rem;
+  margin-bottom: 2.5rem;
+  max-width: 32rem;
+}
+
+.toc-label {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 0 0 0.4rem;
+  color: #555;
+}
+
+#TableOfContents {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+#TableOfContents ul {
+  list-style: none;
+  padding-left: 1.2rem;
+  width: auto;
+  margin: 0;
+}
+
+#TableOfContents > ul {
+  padding-left: 0;
+}
+
+#TableOfContents a {
+  color: #444;
+  text-decoration: none;
+  background: none;
+  text-shadow: none;
+}
+
+#TableOfContents a:hover {
+  color: #111;
+}
+
+/* === Site Header/Nav === */
+.site-header {
+  padding: 1.5rem 0 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.site-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.site-title a {
+  color: inherit;
+  text-decoration: none;
+  background: none;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.site-nav a {
+  color: inherit;
+  text-decoration: none;
+  background: none;
+}
+
+.site-nav a:hover {
+  opacity: 0.6;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.theme-toggle,
+.search-trigger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-size: 1.1rem;
+  padding: 0.25rem;
+  line-height: 1;
+  opacity: 0.7;
+}
+
+.theme-toggle:hover,
+.search-trigger:hover {
+  opacity: 1;
+}
+
+/* === Site Footer === */
+.site-footer {
+  padding: 2rem 0 4rem;
+  font-size: 1.1rem;
+}
+
+.site-footer hr {
+  width: 55%;
+  margin-bottom: 2rem;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.footer-nav a {
+  color: inherit;
+  text-decoration: none;
+  background: none;
+}
+
+.footer-nav a:hover {
+  opacity: 0.6;
+}
+
+.copyright {
+  font-size: 1rem;
+  opacity: 0.6;
+}
+
+/* === List page === */
+.post-list {
+  list-style: none;
+  padding-left: 0;
+  width: 55%;
+}
+
+.post-list .year-heading {
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-list li {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+}
+
+.post-list .post-date {
+  font-family: "serif4";
+  font-size: 1rem;
+  opacity: 0.6;
+  display: inline-block;
+  min-width: 6rem;
+}
+
+.post-list .post-link {
+  font-size: 1.2rem;
+}
+
+/* === Search Overlay === */
+.search-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 15vh;
+}
+
+.search-overlay.active {
+  display: flex;
+}
+
+.search-container {
+  background: #fffff8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 90%;
+  max-width: 600px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+}
+
+.search-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  flex: 1;
+  font-family: "serif4", Palatino, Georgia, serif;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: transparent;
+  color: inherit;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #888;
+}
+
+.search-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: inherit;
+  padding: 0.25rem 0.5rem;
+  opacity: 0.6;
+}
+
+.search-close:hover {
+  opacity: 1;
+}
+
+.search-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.search-results li {
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.search-results li:last-child {
+  border-bottom: none;
+}
+
+.search-results li.active,
+.search-results li:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.search-results a {
+  color: inherit;
+  text-decoration: none;
+  background: none;
+  display: block;
+}
+
+.search-result-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+.search-result-summary {
+  font-size: 0.95rem;
+  opacity: 0.6;
+  line-height: 1.4;
+}
+
+.search-no-results {
+  padding: 1rem 0.5rem;
+  opacity: 0.6;
+  font-style: italic;
+}
+
+/* === Syntax Highlighting: Light Theme === */
+/* Background */ .bg { background-color: #fff; }
+/* PreWrapper */ .chroma { background-color: #f6f8fa; color: #1f2328; }
+/* Error */ .chroma .err { color: #82071e; }
+/* LineLink */ .chroma .lnlinks { outline: none; text-decoration: none; color: inherit; }
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; }
+/* LineHighlight */ .chroma .hl { background-color: #e5e5e5; }
+/* LineNumbersTable */ .chroma .lnt { white-space: pre; user-select: none; margin-right: 0.4em; padding: 0 0.4em; color: #7f7f7f; }
+/* LineNumbers */ .chroma .ln { white-space: pre; user-select: none; margin-right: 0.4em; padding: 0 0.4em; color: #7f7f7f; }
+/* Line */ .chroma .line { display: flex; }
+/* Keyword */ .chroma .k { color: #cf222e; }
+/* KeywordConstant */ .chroma .kc { color: #cf222e; }
+/* KeywordDeclaration */ .chroma .kd { color: #cf222e; }
+/* KeywordNamespace */ .chroma .kn { color: #cf222e; }
+/* KeywordPseudo */ .chroma .kp { color: #cf222e; }
+/* KeywordReserved */ .chroma .kr { color: #cf222e; }
+/* KeywordType */ .chroma .kt { color: #cf222e; }
+/* NameAttribute */ .chroma .na { color: #1f2328; }
+/* NameBuiltin */ .chroma .nb { color: #6639ba; }
+/* NameBuiltinPseudo */ .chroma .bp { color: #6a737d; }
+/* NameClass */ .chroma .nc { color: #1f2328; }
+/* NameConstant */ .chroma .no { color: #0550ae; }
+/* NameDecorator */ .chroma .nd { color: #0550ae; }
+/* NameEntity */ .chroma .ni { color: #6639ba; }
+/* NameFunction */ .chroma .nf { color: #6639ba; }
+/* NameLabel */ .chroma .nl { color: #900; font-weight: bold; }
+/* NameNamespace */ .chroma .nn { color: #24292e; }
+/* NameOther */ .chroma .nx { color: #1f2328; }
+/* NameTag */ .chroma .nt { color: #0550ae; }
+/* NameVariable */ .chroma .nv { color: #953800; }
+/* NameVariableClass */ .chroma .vc { color: #953800; }
+/* NameVariableGlobal */ .chroma .vg { color: #953800; }
+/* NameVariableInstance */ .chroma .vi { color: #953800; }
+/* LiteralString */ .chroma .s { color: #0a3069; }
+/* LiteralStringAffix */ .chroma .sa { color: #0a3069; }
+/* LiteralStringBacktick */ .chroma .sb { color: #0a3069; }
+/* LiteralStringChar */ .chroma .sc { color: #0a3069; }
+/* LiteralStringDelimiter */ .chroma .dl { color: #0a3069; }
+/* LiteralStringDoc */ .chroma .sd { color: #0a3069; }
+/* LiteralStringDouble */ .chroma .s2 { color: #0a3069; }
+/* LiteralStringEscape */ .chroma .se { color: #0a3069; }
+/* LiteralStringHeredoc */ .chroma .sh { color: #0a3069; }
+/* LiteralStringInterpol */ .chroma .si { color: #0a3069; }
+/* LiteralStringOther */ .chroma .sx { color: #0a3069; }
+/* LiteralStringRegex */ .chroma .sr { color: #0a3069; }
+/* LiteralStringSingle */ .chroma .s1 { color: #0a3069; }
+/* LiteralStringSymbol */ .chroma .ss { color: #032f62; }
+/* LiteralNumber */ .chroma .m { color: #0550ae; }
+/* LiteralNumberBin */ .chroma .mb { color: #0550ae; }
+/* LiteralNumberFloat */ .chroma .mf { color: #0550ae; }
+/* LiteralNumberHex */ .chroma .mh { color: #0550ae; }
+/* LiteralNumberInteger */ .chroma .mi { color: #0550ae; }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #0550ae; }
+/* LiteralNumberOct */ .chroma .mo { color: #0550ae; }
+/* Operator */ .chroma .o { color: #0550ae; }
+/* OperatorWord */ .chroma .ow { color: #0550ae; }
+/* Punctuation */ .chroma .p { color: #1f2328; }
+/* Comment */ .chroma .c { color: #57606a; }
+/* CommentHashbang */ .chroma .ch { color: #57606a; }
+/* CommentMultiline */ .chroma .cm { color: #57606a; }
+/* CommentSingle */ .chroma .c1 { color: #57606a; }
+/* CommentSpecial */ .chroma .cs { color: #57606a; }
+/* CommentPreproc */ .chroma .cp { color: #57606a; }
+/* CommentPreprocFile */ .chroma .cpf { color: #57606a; }
+/* GenericDeleted */ .chroma .gd { color: #82071e; background-color: #ffebe9; }
+/* GenericEmph */ .chroma .ge { color: #1f2328; }
+/* GenericInserted */ .chroma .gi { color: #116329; background-color: #dafbe1; }
+/* GenericOutput */ .chroma .go { color: #1f2328; }
+/* GenericUnderline */ .chroma .gl { text-decoration: underline; }
+
+/* === Dark Mode === */
+html[data-theme="dark"],
+[data-theme="dark"] body {
+  background-color: #151515;
+  color: #ddd;
+}
+
+[data-theme="dark"] a:link {
+  background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: 0% 93%, 100% 93%, 0% 93%;
+}
+
+[data-theme="dark"] .toc {
+  border-left-color: #444;
+}
+
+[data-theme="dark"] .toc-label {
+  color: #999;
+}
+
+[data-theme="dark"] #TableOfContents a {
+  color: #aaa;
+}
+
+[data-theme="dark"] #TableOfContents a:hover {
+  color: #ddd;
+}
+
+[data-theme="dark"] hr {
+  border-color: #444;
+}
+
+[data-theme="dark"] thead th {
+  border-bottom-color: #ddd;
+}
+
+[data-theme="dark"] tbody td {
+  border-bottom-color: #333;
+}
+
+[data-theme="dark"] table {
+  border-top-color: #ddd;
+}
+
+[data-theme="dark"] .search-container {
+  background: #1e1e1e;
+  border-color: #444;
+}
+
+[data-theme="dark"] .search-input {
+  border-color: #444;
+}
+
+[data-theme="dark"] .search-input:focus {
+  border-color: #888;
+}
+
+[data-theme="dark"] .search-results li {
+  border-bottom-color: #333;
+}
+
+[data-theme="dark"] .search-results li.active,
+[data-theme="dark"] .search-results li:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Syntax Highlighting: Dark Theme */
+[data-theme="dark"] .chroma { color: #e6edf3; background-color: #25282e; }
+[data-theme="dark"] .chroma .err { color: #f85149; }
+[data-theme="dark"] .chroma .hl { background-color: #6e7681; }
+[data-theme="dark"] .chroma .lnt { color: #737679; }
+[data-theme="dark"] .chroma .ln { color: #6e7681; }
+[data-theme="dark"] .chroma .k { color: #ff7b72; }
+[data-theme="dark"] .chroma .kc { color: #79c0ff; }
+[data-theme="dark"] .chroma .kd { color: #ff7b72; }
+[data-theme="dark"] .chroma .kn { color: #ff7b72; }
+[data-theme="dark"] .chroma .kp { color: #79c0ff; }
+[data-theme="dark"] .chroma .kr { color: #ff7b72; }
+[data-theme="dark"] .chroma .kt { color: #ff7b72; }
+[data-theme="dark"] .chroma .n { color: #e6edf3; }
+[data-theme="dark"] .chroma .nb { color: #d2a8ff; }
+[data-theme="dark"] .chroma .bp { color: #e6edf3; }
+[data-theme="dark"] .chroma .nc { color: #f0883e; font-weight: bold; }
+[data-theme="dark"] .chroma .no { color: #79c0ff; font-weight: bold; }
+[data-theme="dark"] .chroma .nd { color: #d2a8ff; font-weight: bold; }
+[data-theme="dark"] .chroma .ni { color: #ffa657; }
+[data-theme="dark"] .chroma .ne { color: #f0883e; font-weight: bold; }
+[data-theme="dark"] .chroma .nf { color: #d2a8ff; font-weight: bold; }
+[data-theme="dark"] .chroma .nl { color: #79c0ff; font-weight: bold; }
+[data-theme="dark"] .chroma .nn { color: #ff7b72; }
+[data-theme="dark"] .chroma .nt { color: #7ee787; }
+[data-theme="dark"] .chroma .nv { color: #79c0ff; }
+[data-theme="dark"] .chroma .py { color: #79c0ff; }
+[data-theme="dark"] .chroma .l { color: #a5d6ff; }
+[data-theme="dark"] .chroma .ld { color: #79c0ff; }
+[data-theme="dark"] .chroma .s { color: #a5d6ff; }
+[data-theme="dark"] .chroma .sa { color: #79c0ff; }
+[data-theme="dark"] .chroma .sb { color: #a5d6ff; }
+[data-theme="dark"] .chroma .sc { color: #a5d6ff; }
+[data-theme="dark"] .chroma .dl { color: #79c0ff; }
+[data-theme="dark"] .chroma .sd { color: #a5d6ff; }
+[data-theme="dark"] .chroma .s2 { color: #a5d6ff; }
+[data-theme="dark"] .chroma .se { color: #79c0ff; }
+[data-theme="dark"] .chroma .sh { color: #79c0ff; }
+[data-theme="dark"] .chroma .si { color: #a5d6ff; }
+[data-theme="dark"] .chroma .sx { color: #a5d6ff; }
+[data-theme="dark"] .chroma .sr { color: #79c0ff; }
+[data-theme="dark"] .chroma .s1 { color: #a5d6ff; }
+[data-theme="dark"] .chroma .ss { color: #a5d6ff; }
+[data-theme="dark"] .chroma .m { color: #a5d6ff; }
+[data-theme="dark"] .chroma .mb { color: #a5d6ff; }
+[data-theme="dark"] .chroma .mf { color: #a5d6ff; }
+[data-theme="dark"] .chroma .mh { color: #a5d6ff; }
+[data-theme="dark"] .chroma .mi { color: #69b8f8; }
+[data-theme="dark"] .chroma .il { color: #a5d6ff; }
+[data-theme="dark"] .chroma .mo { color: #a5d6ff; }
+[data-theme="dark"] .chroma .o { color: #ff7b72; font-weight: bold; }
+[data-theme="dark"] .chroma .ow { color: #ff7b72; font-weight: bold; }
+[data-theme="dark"] .chroma .c { color: #8b949e; font-style: italic; }
+[data-theme="dark"] .chroma .ch { color: #8b949e; font-style: italic; }
+[data-theme="dark"] .chroma .cm { color: #8b949e; font-style: italic; }
+[data-theme="dark"] .chroma .c1 { color: #8b949e; font-style: italic; }
+[data-theme="dark"] .chroma .cs { color: #8b949e; font-weight: bold; font-style: italic; }
+[data-theme="dark"] .chroma .cp { color: #8b949e; font-weight: bold; font-style: italic; }
+[data-theme="dark"] .chroma .cpf { color: #8b949e; font-weight: bold; font-style: italic; }
+[data-theme="dark"] .chroma .gd { color: #ffa198; background-color: #490202; }
+[data-theme="dark"] .chroma .ge { font-style: italic; }
+[data-theme="dark"] .chroma .gr { color: #ffa198; }
+[data-theme="dark"] .chroma .gh { color: #79c0ff; font-weight: bold; }
+[data-theme="dark"] .chroma .gi { color: #56d364; background-color: #0f5323; }
+[data-theme="dark"] .chroma .go { color: #8b949e; }
+[data-theme="dark"] .chroma .gp { color: #8b949e; }
+[data-theme="dark"] .chroma .gs { font-weight: bold; }
+[data-theme="dark"] .chroma .gu { color: #79c0ff; }
+[data-theme="dark"] .chroma .gt { color: #ff7b72; }
+[data-theme="dark"] .chroma .gl { text-decoration: underline; }
+[data-theme="dark"] .chroma .w { color: #6e7681; }
+
+/* === Responsive === */
+@media (max-width: 760px) {
+  body {
+    width: 84%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  hr,
+  section > p,
+  section > footer,
+  section > table {
+    width: 100%;
+  }
+
+  pre > code {
+    width: 97%;
+  }
+
+  section > dl,
+  section > ol,
+  section > ul {
+    width: 90%;
+  }
+
+  figure {
+    max-width: 90%;
+  }
+
+  figcaption,
+  figure.fullwidth figcaption {
+    margin-right: 0;
+    max-width: none;
+  }
+
+  blockquote {
+    margin-left: 1.5em;
+    margin-right: 0;
+  }
+
+  blockquote p,
+  blockquote footer {
+    width: 100%;
+  }
+
+  label.margin-toggle:not(.sidenote-number) {
+    display: inline;
+    cursor: pointer;
+  }
+
+  .sidenote,
+  .marginnote {
+    display: none;
+  }
+
+  .margin-toggle:checked + .sidenote,
+  .margin-toggle:checked + .marginnote {
+    display: block;
+    float: left;
+    left: 1rem;
+    clear: both;
+    width: 95%;
+    margin: 1rem 2.5%;
+    position: relative;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  .highlight {
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .post-list {
+    width: 100%;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1100px) {
+  body {
+    width: 90%;
+    padding-left: 5%;
+  }
+}
+
+/* Inline code */
+:not(pre) > code {
+  font-size: 1rem;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] :not(pre) > code {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* KaTeX overrides for Tufte style */
+.katex-display {
+  width: 55%;
+}
+
+@media (max-width: 760px) {
+  .katex-display {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+/* Image styling */
+section img {
+  max-width: 100%;
+}
+
+/* Prevent content images from overflowing */
+section > p > img {
+  max-width: 100%;
+}
