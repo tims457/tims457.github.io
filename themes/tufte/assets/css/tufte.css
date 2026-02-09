@@ -475,7 +475,7 @@ pre.fullwidth > code {
 }
 
 .site-title {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 400;
   margin: 0;
 }
@@ -490,10 +490,12 @@ pre.fullwidth > code {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.15em;
+  color: #82071e;
+  margin-right: 1rem;
 }
 
 .site-nav a {
@@ -845,6 +847,11 @@ html[data-theme="dark"],
 [data-theme="dark"] .search-results li:hover {
   background: rgba(255, 255, 255, 0.06);
 }
+
+[data-theme="dark"] .site-nav {
+  color: #ddd;
+}
+
 
 /* Syntax Highlighting: Dark Theme */
 [data-theme="dark"] .chroma { color: #e6edf3; background-color: #25282e; }
